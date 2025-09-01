@@ -2,15 +2,15 @@ with
 
 source as (
 
-    select * from {{ source('pagila', 'film_actor') }}
+    select * from {{ source('pagila', 'country') }}
 
 ),
 
 renamed as (
 
     select
-        actor_id,
-        film_id,
+        country_id,
+        country,
         last_update
 
     from source

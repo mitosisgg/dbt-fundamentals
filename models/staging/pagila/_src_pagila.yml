@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: pagila
+    database: pagila  
+    schema: raw
+    tables:
+      - name: film
+      - name: actor
+      - name: film_actor
+      - name: address
+      - name: category
+      - name: customer
+      - name: store
+      - name: staff
+      - name: inventory
+      - name: film_category
+      - name: rental
+      - name: payment
+      - name: city
+      - name: country
+      - name: language
