@@ -4,19 +4,35 @@ sources:
   - name: pagila
     database: pagila  
     schema: raw
+    description: A clone of a Postgres app database.
     tables:
       - name: film
+        description: raw film data
       - name: actor
+        description: raw actor data
       - name: film_actor
+        description: join table between film and actor
       - name: address
+        description: raw address data
       - name: category
+        description: raw category data
       - name: customer
+        description: raw customer data
       - name: store
+        description: raw store data
       - name: staff
+        description: raw staff data
       - name: inventory
+        description: raw inventory data
       - name: film_category
+        description: join table between film and category
       - name: rental
+        description: raw rental data
       - name: payment
+        description: raw payment data
       - name: city
+        description: raw city data
       - name: country
+        description: raw country data
       - name: language
+        description: raw language data
