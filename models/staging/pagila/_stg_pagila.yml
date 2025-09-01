@@ -1,0 +1,24 @@
+models:
+  - name: stg_pagila__film
+    columns:
+      - name: film_id
+        data_tests:
+          - unique
+          - not_null
+      - name: rating
+        data_tests:
+          - accepted_values:
+              values: ['R', 'G', 'NC-17', 'PG', 'PG-13']
+      - name: language_id
+        data_tests:
+          - relationships:
+              to: ref('stg_pagila__language')
+              field: language_id
+  - name: stg_pagila__actor
+    columns:
+      - name: actor_id
+        data_tests:
+          - unique
+          - not_null
+  
+              
